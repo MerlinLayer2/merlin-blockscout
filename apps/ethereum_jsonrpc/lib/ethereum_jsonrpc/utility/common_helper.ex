@@ -6,7 +6,7 @@ defmodule EthereumJSONRPC.Utility.CommonHelper do
   # converts duration like "5s", "2m", "1h5m" to milliseconds
   @duration_regex ~r/(\d+)([smhSMH]?)/
   def parse_duration(duration) do
-    Logger.info("...parse_duration duration = #{duration}")
+#    Logger.info("...parse_duration duration = #{duration}")
 
     case Regex.scan(@duration_regex, duration) do
       [] ->

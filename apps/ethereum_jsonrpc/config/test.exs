@@ -18,5 +18,5 @@ config :ethereum_jsonrpc, EthereumJSONRPC.RequestCoordinator,
 config :ethereum_jsonrpc, EthereumJSONRPC.Tracer, disabled?: false
 
 config :logger, :ethereum_jsonrpc,
-  level: :warn,
+  level: :debug,
   path: Path.absname("logs/test/ethereum_jsonrpc.log")

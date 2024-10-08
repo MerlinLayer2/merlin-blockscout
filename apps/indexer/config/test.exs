@@ -5,7 +5,7 @@ config :indexer, Indexer.Tracer, disabled?: false
 config :indexer, Indexer.Block.Catchup.MissingRangesCollector, future_check_interval: 1
 
 config :logger, :indexer,
-  level: :warn,
+  level: :debug,
   path: Path.absname("logs/test/indexer.log")
 
 config :logger, :indexer_token_balances,

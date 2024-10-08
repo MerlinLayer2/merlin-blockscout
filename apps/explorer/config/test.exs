@@ -94,7 +94,7 @@ config :explorer, Explorer.Repo.PolygonZkevm,
   queue_target: 1000
 
 config :logger, :explorer,
-  level: :warn,
+  level: :debug,
   path: Path.absname("logs/test/explorer.log")
 
 config :explorer, Explorer.ExchangeRates.Source.TransactionAndLog,
